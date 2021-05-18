@@ -4,7 +4,7 @@ import settings
 
 logging.basicConfig(filename="bot.log", level=logging.INFO)
 def greet_user(update,context):
-    print("Keksы Здесь?")
+    print("Пользователь найден")
     update.message.reply_text('Олды тут?')
     print(update)
 def talk_to_me(update, context):
@@ -20,4 +20,5 @@ def main():
     logging.info("start botik")
     mybot.start_polling()
     mybot.idle()
-main()
+if __name__ == "__main__":
+    main()
